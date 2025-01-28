@@ -1,0 +1,64 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #6e85d1;
+    box-sizing: border-box;
+}
+
+.hero-bg {
+    background-image: url('images/IMG_3582.gif');
+    background-size: cover;
+    background-position: top;
+}
+
+.logo {
+    scale: 250%;
+}
+
+.bg {
+    background-color: #b3beef;
+    color: #0e0d0d;
+}
+
+header {
+    position: sticky;
+    background-color: #b3bee0;
+    top: 0;
+    z-index: 10;
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .htitle {
+        font-size: 200%;
+    }
+
+    .hnav {
+        font-size: 110%;
+    }
+
+    .images {
+        height: 90%;
+    }
+
+    .hero-bg {
+    background-color: #6e85d1;
+    background-size: cover; /* Maintain cover for consistency */
+        background-position: 50% top; /* Adjusted for mobile screens */
+        /* Additional mobile styles */
+    }
+}

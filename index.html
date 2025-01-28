@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambz Tattz</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://iili.io/2QqcSF2.png">
+</head>
+
+<body class="bg">
+    
+    <header class="bg- text- p-5 flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <a href="index.html">
+                <img src="https://iili.io/2QqcSF2.png" class="w-10 h-10 logo" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="hnav flex space-x-4">
+                <li><a href="index.html#home" class="hover:underline">Home</a></li>
+                <li><a href="portfolio.html" class="hover:underline">Portfolio</a></li>
+                <li><a href="index.html#contact" class="hover:underline">Book In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg hero-section flex items-center justify-center text-center text-white">
+        <div>
+            <h2 class="text-5xl font-bold mb-4">Hey there</h2>
+            <p class="mb-8">Click the link below to enquire!</p>
+            <a href="#contact" class="bg-white text-black py-2 px-4 rounded">Contact Me!</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="p-10 text-center">
+        <h2 class="text-4xl mb-4">About the Artist</h2>
+        <div class="max-w-3xl mx-auto">
+            <img src="images/stinkyhead.jpg" class="w-48 h-48 rounded-full mx-auto mb-4" alt="Artist Photo">
+            <p><b></b></p>
+            <p>Hi, my name is Amber!</p>
+            <div class="mt-4">
+            <p>I am a tattoo artist who has been tattooing humans since Feb 2022. I work in Ballarat, VIC at a studio called Ballarat Tattoo Gallery.</p>
+            <br>
+            <p>I specialise in colour from cartoon characters to semi-realistic pieces or black and grey soft stipple. I pride myself in being able to excecute a range of styles. I particularly enjoy whimsical and old/vintage art designs!</p>
+            <br>
+            <p>To get in contact with me, fill out the form below with your ideas and I will be in touch via email! Or if instagram/facebook is easier for you, just search Ambz Tattz and you will find me!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="p-10 text-center">
+    <h2 class="text-4xl mb-4">Booking</h2>
+    <form method="POST" action="https://formspree.io/xzzppbgg" enctype="multipart/form-data" class="max-w-lg mx-auto">
+        <div class="mb-4">
+            <label for="fullname" class="block text-left mb-1">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Your full name" class="w-full p-2 border border-gray-300 rounded text-black" required>
+        </div>
+        <div class="mb-4">
+            <label for="email" class="block text-left mb-1">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" class="w-full p-2 border border-gray-300 rounded text-black" required>
+        </div>
+        <div class="mb-4">
+            <label for="phone" class="block text-left mb-1">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" class="w-full p-2 border border-gray-300 rounded text-black" required>
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-left mb-1">Details of tattoo:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Please provide details of the tattoo you'd like" class="w-full p-2 border border-gray-300 rounded text-black" required></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-left mb-1">Body Part:</label>
+            <textarea id="message" name="message" rows="1" placeholder="Body part:" class="w-full p-2 border border-gray-300 rounded text-black" required></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-left mb-1">Size in cm:</label>
+            <textarea id="message" name="message" rows="1" placeholder="Size in cm:" class="w-full p-2 border border-gray-300 rounded text-black" required></textarea>
+        </div>
+        <div class="mb-4">
+            <label for="message" class="block text-left mb-1">Style:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Eg. colour, black and grey, traditional, abstract, neo-traditional, outline or your best description" class="w-full p-2 border border-gray-300 rounded text-black" required></textarea>
+        </div>
+        <div class="mb-4">
+            <label class="block text-left mb-1">Preferred Day(s) (Tuesday to Sunday):</label>
+            <div class="flex flex-wrap">
+            
+                <label class="inline-flex items-center mr-4 mb-2">
+                    <input type="checkbox" name="preferred_days[]" value="Tuesday" class="mr-2"> Tuesday
+                </label>
+                <label class="inline-flex items-center mr-4 mb-2">
+                    <input type="checkbox" name="preferred_days[]" value="Wednesday" class="mr-2"> Wednesday
+                </label>
+                <label class="inline-flex items-center mr-4 mb-2">
+                    <input type="checkbox" name="preferred_days[]" value="Thursday" class="mr-2"> Thursday
+                </label>
+                <label class="inline-flex items-center mr-4 mb-2">
+                    <input type="checkbox" name="preferred_days[]" value="Friday" class="mr-2"> Friday
+                </label>
+                <label class="inline-flex items-center mr-4 mb-2">
+                    <input type="checkbox" name="preferred_days[]" value="Saturday" class="mr-2"> Saturday
+                </label>
+                <label class="inline-flex items-center mr-4 mb-2">
+                    <input type="checkbox" name="preferred_days[]" value="Sunday" class="mr-2"> Sunday
+                </label>
+            </div>
+        </div>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded">Send</button>
+    </form>
+</section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white p-5 text-center">
+        <p>&copy; AmbzTattz</p>
+       
+    </footer>
+</body>
+</html>
